@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartão de Isabelly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chango&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #5c2a41;
+      border: 15px solid #ffb6c1;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-family: 'Chango', cursive;
+      font-size: 36px;
+      margin: 20px;
+      color: #ff66a3;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #cc397b;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .left {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .right {
+      display: none;
+    }
+    .perfil-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .perfil-box .foto {
+      width: 180px;
+      height: 180px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      margin-top: 10px;
+    }
+    .sobre-mim {
+      flex: 1;
+      background-color: rgba(255, 182, 193, 0.4);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-left: 40px;
+      transition: background-color 0.3s ease;
+    }
+    .hobbies {
+      margin-top: 40px;
+    }
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    .hobby-item {
+      text-align: center;
+    }
+    .hobby-item p {
+      margin: 8px 0;
+      font-weight: bold;
+      color: #cc397b;
+    }
+    .hobby-item img {
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .hobby-item img:hover {
+      transform: scale(1.08);
+    }
+    .contatos {
+      margin-top: 40px;
+      background-color: #ffd6e7;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contatos p {
+      margin: 5px 0;
+    }
+    .icones {
+      margin-top: -10px;
+      font-size: 16px;
+      color: #cc397b;
+      padding-left: 10px;
+    }
+    @media (max-width: 768px) {
+      .perfil-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .sobre-mim {
+        text-align: center;
+        margin-left: 0;
+      }
+      .sobre-mim p:hover {
+        background-color: #ffeaf4;
+        transition: background-color 0.4s;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .hobby-grid {
+        grid-template-columns: 1fr;
+      }
+      .contato-canto {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ffd6e7;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        color: #cc397b;
+        font-size: 14px;
+        z-index: 100;
+      }
+      .contato-canto p {
+        margin: 5px 0;
+      }
+      .contato-canto i {
+        margin-right: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Isabelly</h1>
+      <div class="perfil-box">
+        <div>
+          <img class="foto" src="imagens/isa.jpg" alt="Foto da Isabelly">
+          <p style="font-size: 14px; color: #a64d79; margin-top: 6px; text-align: center;"><em>ela/dela</em></p>
+          <div style="text-align: center; margin-top: 10px; color: #cc397b; font-size: 18px;">
+            <i class="fa-solid fa-music"></i> Música<br>
+            <i class="fa-solid fa-paintbrush"></i> Desenhar
+          </div>
+        </div>
+        <div class="sobre-mim">
+          <p><span style="color:#d63384; font-weight: bold;">Oi!</span> Me chamo <span style="color:#e83e8c; font-weight: bold;">Isabelly</span>, tenho 16 anos e sou estudante de <span style="background-color: #ffe6f0; padding: 2px 5px; border-radius: 8px;">Informática no IFMA</span>.</p>
+          <p>Sou <span style="color:#ff69b4;">desenhista</span>, <span style="color:#ff99cc;">ambivertida</span> e pansexual <span style="background-color:#ffd9ec; padding:2px 6px; border-radius:10px;">gosto de</span> dormir. <span style="font-size: 20px;">♡</span></p>
+          <p>Gosto de <strong>desenhar</strong>, <strong>escutar música</strong> e lê mangá!</p>
+          <p>Também gosto de coisas que me fazem feliz, como dançar, comer e... <span style="color:#d63384; font-weight: bold;">maionese</span> <span style="font-size: 20px;">♡</span></p>
+          <p>Um dos meus maiores sonhos é ter uma <span style="color:#cc397b; font-weight: bold;">casa própria</span>: aconchegante, cheia de <span style="color:#ff66a3;">plantas</span> e <span style="color:#ff99cc;">pinturas</span> espalhada por todos os cantos.</p>
+          <p style="margin-top:10px;"><span style="background-color:#ffbfd9; padding:5px 10px; border-radius:10px;">Seja bem-vindo(a)!</span></p>
+        </div>
+      </div>
+      <div class="contato-canto">
+        <p><i class="fa-solid fa-envelope icones"></i> Email: isa_oliveira@emailfalso.com</p>
+        <p><i class="fa-solid fa-phone icones"></i> Contato: 4002-8922</p>
+        <p><i class="fa-brands fa-instagram icones"></i> Instagram: @isakk</p>
+      </div>      
+      <div class="hobbies">
+        <h2>Meus Hobbies</h2>
+        <div class="hobby-grid">
+          <div class="hobby-item">
+            <p>Desenhar</p>
+            <img src="imagens/6a92d43dfdb6d63612bb3b795e9e20a1.jpg" alt="Desenho feito por Isabelly">
+          </div>
+          <div class="hobby-item">
+            <p>Escutar música</p>
+            <img src="imagens/4d221abfa78f09db73b50bc5131045e8.jpg" alt="Imagem representando música">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
